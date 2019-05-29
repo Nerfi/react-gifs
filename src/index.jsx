@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
 
+import App from './components/app';
+// no se porqye esta esto aqui
 const Hello = ({ name }) => {
   return (
     <div>
@@ -12,7 +14,15 @@ const Hello = ({ name }) => {
   );
 };
 
+//const root = document.getElementById('root');
+//if (root) {
+ // ReactDOM.render(<Hello name="World" />, root);
+//}
+
+
+// starting the app
 const root = document.getElementById('root');
-if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+if(root) {
+  ReactDOM.render(<App />, root);
+
 }
